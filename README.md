@@ -14,16 +14,21 @@ The application includes data preprocessing, model training, and a RESTful API f
 ### Dependencies
 Ensure that the following Python libraries are installed by running:
 
+# requirements.txt
 ```bash
-pip install -r requirements_ml.txt
-
 Flask
 Flask-CORS
 Pandas
 NumPy
 Scikit-Learn
 Joblib
+```
 
+```bash
+pip install -r requirements.txt
+```
+
+```bash
 /Diabetes-Prediction-System-Using-Machine-Learning
 │
 ├── model_training/
@@ -38,38 +43,36 @@ Joblib
 │
 └── frontend/
     └── [React.js Files]
-
-Setup and Installation
-Install Dependencies:
+```
+### Setup and Installation
+- **Install Dependencies:**
 
 cd DiabetesPredictionPro/backend
+```bash
 pip install -r requirements_ml.txt
 ```
 
-Data Preprocessing:
+- **Data Preprocessing:**
 
 Navigate to the model training directory and run:
 
-bash
-Copy
-Edit
-cd DiabetesPredictionPro/model_training
+cd DiabetesPredictionPro/model_training.py
+```bash
 python preprocess_data.py
-Model Training:
-
+```
+- **Model Training:**
 Execute the training script:
-
-bash
-Copy
-Edit
+cd DiabetesPredictionPro/train_model.py
+```bash
 python train_model.py
-Run the Backend Server:
-
+```
+- **Run the Backend Server:**
 Navigate to the backend directory and start the Flask server:
 
 cd ../backend
+```bash
 python app.py
-
+```
 Explanation of Dependencies
 Flask: Backend server to handle API requests.
 Flask-CORS: Enables cross-origin requests between the frontend and backend.
@@ -77,7 +80,3 @@ Pandas: Data manipulation and preprocessing.
 NumPy: Fast numerical computations.
 Scikit-Learn: Model training and prediction.
 Joblib: Model serialization and deserialization.
-
-Screenshots
-
-sq
