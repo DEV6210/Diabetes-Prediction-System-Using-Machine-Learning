@@ -41,7 +41,7 @@ Joblib
 
 Setup and Installation
 Install Dependencies:
-```
+
 cd DiabetesPredictionPro/backend
 pip install -r requirements_ml.txt
 ```
