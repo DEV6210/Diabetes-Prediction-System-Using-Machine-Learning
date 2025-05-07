@@ -19,7 +19,7 @@ FEATURE_NAMES_PATH = os.path.join(ARTIFACTS_DIR, 'feature_names.joblib')
 
 
 # --- Application Initialization ---
-app = Flask(__name__, static_folder='build', static_url_path='')
+app = Flask(__name__, static_folder='dist', static_url_path='')
 
 # --- CORS Configuration ---
 # Allow requests from your React frontend (adjust origin if React runs on a different port/domain)
