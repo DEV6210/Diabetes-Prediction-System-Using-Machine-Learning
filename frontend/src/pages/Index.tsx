@@ -23,6 +23,7 @@ const Index = () => {
       console.log("API Health Response:", response);
       if (response.data && response.data.status === "healthy") {
         setApiHealthy(true);
+        setisProceed(true)
         setApiHealthMessage(response.data.message || "API is healthy.");
         setError(''); // Clear previous errors if API is now healthy
       } else {
@@ -93,17 +94,17 @@ const Index = () => {
                 <nav>
                   <ul className="flex items-center space-x-6">
                     <li>
-                      <a href="#" className="text-gray-600 hover:text-medical-600 font-medium">
+                      <a href="#About" className="text-gray-600 hover:text-medical-600 font-medium">
                         About
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="text-gray-600 hover:text-medical-600 font-medium">
-                        Resources
+                      <a href="#RiskAssessment" className="text-gray-600 hover:text-medical-600 font-medium">
+                        Risk Assessment
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="bg-medical-600 hover:bg-medical-700 text-white px-4 py-2 rounded-md font-medium">
+                      <a href="tel:9382370394" className="bg-medical-600 hover:bg-medical-700 text-white px-4 py-2 rounded-md font-medium">
                         Contact Doctor
                       </a>
                     </li>
@@ -126,7 +127,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <Tabs defaultValue="prediction" className="max-w-4xl mx-auto">
+              <Tabs defaultValue="prediction" className="max-w-4xl mx-auto" id="RiskAssessment">
                 <TabsList className="grid w-full grid-cols-2 mb-8">
                   <TabsTrigger value="prediction" className="flex items-center gap-2">
                     <Activity className="h-5 w-5" />
@@ -149,7 +150,7 @@ const Index = () => {
               </Tabs>
             </div>
 
-            <footer className="bg-gray-800 text-white mt-16">
+            <footer className="bg-gray-800 text-white mt-16" id="About">
               <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col md:flex-row justify-between">
                   <div className="mb-6 md:mb-0">
