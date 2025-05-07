@@ -1,0 +1,34 @@
+flask
+flask-cors
+pandas
+numpy
+scikit-learn
+joblib
+
+# step 1
+# pip install -r requirements_ml.txt
+
+# step 2
+# cd DiabetesPredictionPro/model_training
+# python preprocess_data.py
+# python train_model.py
+
+# step 3
+# cd backend
+# python app.py
+
+# Flask (flask):
+# Backend Web Server: Creates the API that your frontend talks to. Handles web requests and responses.
+# Flask-CORS (flask-cors):
+# Enables Communication: Allows your frontend (on a different address, e.g., localhost:3000) to make requests to your Flask backend (e.g., localhost:8000).
+# Pandas (pandas):
+# Data Organizer: Manages and manipulates data in a table-like structure (DataFrame). Used for loading the dataset during training and structuring input data in the API.
+# NumPy (numpy):
+# Numerical Engine: Provides tools for fast numerical calculations (arrays, math). It's the foundation for Pandas and Scikit-learn.
+# Scikit-learn (sklearn):
+# Machine Learning Toolkit: Provides tools for building and using ML models.
+# Preprocessing: StandardScaler to prepare data.
+# Model Training: Algorithms like LogisticRegression, RandomForestClassifier.
+# Model Prediction: Using the trained model to predict outcomes.
+# Joblib (joblib):
+# Model Saver/Loader: Efficiently saves your trained Scikit-learn models and scalers to disk and loads them back into your application.
