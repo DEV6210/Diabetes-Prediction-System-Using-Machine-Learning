@@ -93,6 +93,7 @@ Joblib: Model serialization and deserialization.
 
 ![Screenshot 2025-05-07 195854](https://github.com/user-attachments/assets/815c61dd-570d-4bdd-a36f-ee1f1abaf959)
 ![Screenshot 2025-05-07 195954](https://github.com/user-attachments/assets/51798ac3-77ed-41ba-92a0-64ab3d7e62af)
+![Screenshot (31)](https://github.com/user-attachments/assets/7dcf3717-21fc-44ea-b4ea-ed6ff5de3c45)
 
 
 
